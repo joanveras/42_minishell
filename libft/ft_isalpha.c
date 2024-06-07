@@ -3,13 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalpha.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: felperei <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: marcribe <marcribe@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/16 14:00:15 by felperei          #+#    #+#             */
-/*   Updated: 2023/10/16 14:00:27 by felperei         ###   ########.fr       */
+/*   Created: 2023/10/16 14:00:15 by marcribe          #+#    #+#             */
+/*   Updated: 2023/10/16 14:00:27 by marcribe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include "libft.h"
+#include "../includes/libft.h"
 
 int	ft_isalpha(int c)
 {

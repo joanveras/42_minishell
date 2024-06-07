@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   list_utils_4.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jveras <verasjoan587@gmail.com>            +#+  +:+       +#+        */
+/*   By: jveras <jveras@student.42.rio>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/07 10:09:07 by jveras            #+#    #+#             */
 /*   Updated: 2024/06/07 10:24:48 by jveras           ###   ########.fr       */

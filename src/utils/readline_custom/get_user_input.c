@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   get_user_input.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jveras <verasjoan587@gmail.com>            +#+  +:+       +#+        */
+/*   By: jveras <jveras@student.42.rio>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/07 12:26:52 by jveras            #+#    #+#             */
 /*   Updated: 2024/06/07 16:15:30 by jveras           ###   ########.fr       */

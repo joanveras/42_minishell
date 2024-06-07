@@ -3,13 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: felperei <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: marcribe <marcribe@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/16 14:42:02 by felperei          #+#    #+#             */
-/*   Updated: 2023/10/23 14:43:05 by felperei         ###   ########.fr       */
+/*   Created: 2023/10/16 14:42:02 by marcribe          #+#    #+#             */
+/*   Updated: 2023/10/23 14:43:05 by marcribe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include "libft.h"
+#include "../includes/libft.h"
 
 void	*ft_memset(void *s, int c, size_t n)
 {

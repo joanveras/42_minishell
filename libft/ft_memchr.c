@@ -3,13 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: felperei <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: marcribe <marcribe@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/18 10:13:56 by felperei          #+#    #+#             */
-/*   Updated: 2023/11/08 14:10:49 by felperei         ###   ########.fr       */
+/*   Created: 2023/10/18 10:13:56 by marcribe          #+#    #+#             */
+/*   Updated: 2023/11/08 14:10:49 by marcribe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include "libft.h"
+#include "../includes/libft.h"
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {

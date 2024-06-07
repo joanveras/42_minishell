@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line_utils.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: felperei <felperei@student.42.rio>         +#+  +:+       +#+        */
+/*   By: marcribe <marcribe@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/21 09:50:17 by felperei          #+#    #+#             */
-/*   Updated: 2023/11/21 09:50:27 by felperei         ###   ########.fr       */
+/*   Created: 2023/11/21 09:50:17 by marcribe          #+#    #+#             */
+/*   Updated: 2023/11/21 09:50:27 by marcribe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../includes/libft.h"
 
 char	*ft_strdup(const char *s)
 {

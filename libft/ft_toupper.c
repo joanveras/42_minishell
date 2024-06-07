@@ -3,13 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: felperei <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: marcribe <marcribe@student.42.rio>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/18 09:47:51 by felperei          #+#    #+#             */
-/*   Updated: 2023/10/23 15:04:12 by felperei         ###   ########.fr       */
+/*   Created: 2023/10/18 09:47:51 by marcribe          #+#    #+#             */
+/*   Updated: 2023/10/23 15:04:12 by marcribe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include "libft.h"
+#include "../includes/libft.h"
 
 int	ft_toupper(int c)
 {

@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: felperei <felperei@student.42.rio>         +#+  +:+       +#+        */
+/*   By: marcribe <marcribe@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/21 09:49:51 by felperei          #+#    #+#             */
-/*   Updated: 2023/11/21 09:52:14 by felperei         ###   ########.fr       */
+/*   Created: 2023/11/21 09:49:51 by marcribe          #+#    #+#             */
+/*   Updated: 2023/11/21 09:52:14 by marcribe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../includes/libft.h"
 
 static	char	*ft_next(char *buffer)
 {

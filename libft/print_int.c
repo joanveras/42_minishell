@@ -3,13 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   print_int.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: felperei <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: marcribe <marcribe@student.42.rio>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/30 16:39:43 by felperei          #+#    #+#             */
-/*   Updated: 2023/11/08 13:15:14 by felperei         ###   ########.fr       */
+/*   Created: 2023/10/30 16:39:43 by marcribe          #+#    #+#             */
+/*   Updated: 2023/11/08 13:15:14 by marcribe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include "libft.h"
+#include "../includes/libft.h"
 
 int	print_int(int n)
 {

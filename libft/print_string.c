@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   print_string.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: felperei <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: marcribe <marcribe@student.42.rio>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/31 09:50:17 by felperei          #+#    #+#             */
-/*   Updated: 2023/11/08 10:10:42 by felperei         ###   ########.fr       */
+/*   Created: 2023/10/31 09:50:17 by marcribe          #+#    #+#             */
+/*   Updated: 2023/11/08 10:10:42 by marcribe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../includes/libft.h"
 
 int	print_string(char *str)
 {

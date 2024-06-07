@@ -1,51 +1,52 @@
-NAME = minishell
+NAME = minishell.a
 
-CFLAGS = -Wall -Werror -Wextra
-CC = cc -g
-RM = rm -rf
-
-SRC_DIR = src
-BUILTINS_DIR = /builtins
-REDIRECTS_DIR = /redirects
-EXECUTOR_DIR = /executor
-INCLUDES_DIR = /includes
-UTILS_DIR = /utils
-READLINE_CUSTOM = /readline_custom
-LIBFT = libft.a
-
-SRCS = $(wildcard $(SRC_DIR)/*.c) \
-       $(wildcard $(SRC_DIR)$(BUILTINS_DIR)/*.c) \
-       $(wildcard $(SRC_DIR)$(REDIRECTS_DIR)/*.c) \
-       $(wildcard $(SRC_DIR)$(EXECUTOR_DIR)/*.c) \
-       $(wildcard $(SRC_DIR)$(UTILS_DIR)/*.c) \
-       $(wildcard $(SRC_DIR)$(UTILS_DIR)$(READLINE_CUSTOM)/*.c) \
-       $(wildcard $(SRC_DIR)$(INCLUDES_DIR)/*.h)
+SRCS =	$(wildcard libft/*.c) \
+		$(wildcard src/*.c) \
+		$(wildcard src/utils/*.c) \
+		$(wildcard src/utils/readline_custom/*.c) \
+		$(wildcard src/redirects/*.c) \
+		$(wildcard src/executor/*.c) \
+		$(wildcard src/builtins/*.c) \
 
 OBJS = $(SRCS:.c=.o)
 
-all: $(NAME)
+CC = cc
+
+CFLAGS = -Wall -Wextra -Werror
+
+RM = rm -rf
+
+# Colors and Effects ##################################################
+
+GREEN = \033[0;32m
+YELLOW = \033[0;33m
+RED = \033[0;31m
+RESET_COLOR = \033[0m
+
+# Rules ###############################################################
 
 $(NAME): $(OBJS)
-	@make -C libft > /dev/null
-	@echo "Compilando..."
-	@$(CC) $(CFLAGS) $(OBJS) libft/$(LIBFT) -o $(NAME) -lreadline > /dev/null
-	@echo "\033[0;32mCompilation Finished\033[0m"
+	@echo -e "$(YELLOW)Creating archive $(NAME)$(RESET_COLOR)"
+	@ar rc $(NAME) $(OBJS) >/dev/null 2>&1
+	@echo -e "$(YELLOW)Compiling minishell$(RESET_COLOR)"
+	@$(CC) src/main.c $(CFLAGS) $(NAME) -o minishell -lreadline
+	@echo -e "$(GREEN)minishell compiled successfully!$(RESET_COLOR)"
+
+all: $(NAME)
 
 %.o: %.c
-	@$(CC) $(CFLAGS) -c $< -o $@  > /dev/null
+	@echo -e "$(YELLOW)Compiling $<...$(RESET_COLOR)"
+	@$(CC) $(CFLAGS) -c $< -o $@ >/dev/null 2>&1
 
 clean:
-	@make clean -C libft > /dev/null
-	@$(RM) $(SRC_DIR)/*.o
-	@$(RM) $(SRC_DIR)$(BUILTINS_DIR)/*.o
-	@$(RM) $(SRC_DIR)$(REDIRECTS_DIR)/*.o
-	@$(RM) $(SRC_DIR)$(EXECUTOR_DIR)/*.o
-	@$(RM) $(SRC_DIR)$(UTILS_DIR)/*.o
-	@$(RM) $(SRC_DIR)$(UTILS_DIR)$(READLINE_CUSTOM)/*.o
+	@echo -e "$(RED)Cleaning object files...$(RESET_COLOR)"
+	@$(RM) $(OBJS)
 
 fclean: clean
-	@make fclean -C libft
+	@echo -e "$(RED)Cleaning all files...$(RESET_COLOR)"
 	@$(RM) $(NAME)
-	@$(RM) libft/$(LIBFT)
+	@$(RM) minishell
 
 re: fclean all
+
+.PHONY: all clean fclean re

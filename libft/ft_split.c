@@ -3,13 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: felperei <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: marcribe <marcribe@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/25 09:25:05 by felperei          #+#    #+#             */
-/*   Updated: 2023/10/30 13:36:24 by felperei         ###   ########.fr       */
+/*   Created: 2023/10/25 09:25:05 by marcribe          #+#    #+#             */
+/*   Updated: 2023/10/30 13:36:24 by marcribe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include "libft.h"
+#include "../includes/libft.h"
 
 static void	ft_allocate(char **tab, char const *s, char sep)
 {

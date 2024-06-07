@@ -3,13 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: felperei <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: marcribe <marcribe@student.42.rio>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/18 10:04:52 by felperei          #+#    #+#             */
-/*   Updated: 2023/10/23 14:49:58 by felperei         ###   ########.fr       */
+/*   Created: 2023/10/18 10:04:52 by marcribe          #+#    #+#             */
+/*   Updated: 2023/10/23 14:49:58 by marcribe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include "libft.h"
+#include "../includes/libft.h"
 
 int	ft_tolower(int c)
 {

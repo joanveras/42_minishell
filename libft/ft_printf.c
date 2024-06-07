@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: felperei <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: marcribe <marcribe@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/30 15:57:01 by felperei          #+#    #+#             */
-/*   Updated: 2023/11/08 13:13:17 by felperei         ###   ########.fr       */
+/*   Created: 2023/10/30 15:57:01 by marcribe          #+#    #+#             */
+/*   Updated: 2023/11/08 13:13:17 by marcribe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../includes/libft.h"
 
 int	ft_printf(const char *input, ...)
 {

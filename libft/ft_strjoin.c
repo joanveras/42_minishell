@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: felperei <felperei@student.42.fr>          +#+  +:+       +#+        */
+/*   By: marcribe <marcribe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/24 10:45:38 by felperei          #+#    #+#             */
-/*   Updated: 2024/06/05 08:30:22 by felperei         ###   ########.fr       */
+/*   Created: 2023/10/24 10:45:38 by marcribe          #+#    #+#             */
+/*   Updated: 2024/06/05 08:30:22 by marcribe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../includes/libft.h"
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {

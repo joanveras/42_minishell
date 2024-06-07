@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   utils_env.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jveras <verasjoan587@gmail.com>            +#+  +:+       +#+        */
+/*   By: jveras <jveras@student.42.rio>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/07 10:11:09 by jveras            #+#    #+#             */
 /*   Updated: 2024/06/07 11:33:23 by jveras           ###   ########.fr       */
