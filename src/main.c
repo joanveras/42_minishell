@@ -6,7 +6,7 @@
 /*   By: jveras <verasjoan587@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/04 09:30:11 by felperei          #+#    #+#             */
-/*   Updated: 2024/06/07 15:23:29 by jveras           ###   ########.fr       */
+/*   Updated: 2024/06/07 17:13:19 by jveras           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,13 +21,13 @@ int	main(void)
 	t_env		*env;
 	t_word		*data;
 
-	input = ft_strdup("");
+	input = NULL;
 	data = NULL;
 	env = init_env(environ);
 	env->environ = environ;
 	signal(SIGINT, handle_sigint);
 	signal(SIGQUIT, SIG_IGN);
 	implemente_prompt(input, data, env);
-	free_env(env);
+	ft_lstclear(&env, free);
 	return (0);
 }

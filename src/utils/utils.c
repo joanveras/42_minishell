@@ -6,7 +6,7 @@
 /*   By: jveras <verasjoan587@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/11 15:25:32 by fmontes           #+#    #+#             */
-/*   Updated: 2024/06/07 14:18:40 by jveras           ###   ########.fr       */
+/*   Updated: 2024/06/07 15:55:32 by jveras           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,19 +70,6 @@ void	free_list(t_word *data)
 		tmp = data;
 		data = data->next;
 		free(tmp->word);
-		free(tmp);
-	}
-}
-
-void	free_env(t_env *env)
-{
-	t_env	*tmp;
-
-	while (env)
-	{
-		tmp = env;
-		env = env->next;
-		free(tmp->env_var_s);
 		free(tmp);
 	}
 }

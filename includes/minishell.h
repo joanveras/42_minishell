@@ -6,7 +6,7 @@
 /*   By: jveras <verasjoan587@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/02 13:56:03 by fmontes           #+#    #+#             */
-/*   Updated: 2024/06/07 14:18:32 by jveras           ###   ########.fr       */
+/*   Updated: 2024/06/07 15:55:45 by jveras           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -145,7 +145,6 @@ void				close_exec_fd(t_word *word);
 void				close_sentence_fd(t_word *word);
 void				close_pipe(int *fd);
 void				free_args(char **args);
-void				free_env(t_env *env);
 void				free_list(t_word *data);
 char				*loop_path(char *cmd, t_word *word, char **args2);
 int					redir_in(t_word *current);

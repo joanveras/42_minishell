@@ -6,7 +6,7 @@
 /*   By: jveras <verasjoan587@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/07 14:43:04 by fmontes           #+#    #+#             */
-/*   Updated: 2024/06/07 15:15:53 by jveras           ###   ########.fr       */
+/*   Updated: 2024/06/07 17:08:02 by jveras           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,12 +17,14 @@ t_env	*init_env(char **environ)
 	t_env	*env;
 	int		i;
 
-	env = ft_calloc(sizeof(t_env), 0);
+	env = ft_calloc(sizeof(t_env), 1);
 	if (!env)
 	{
 		ft_putstr_fd("Error: Alocating memory: init_env()\n", 2);
 		return (NULL);
 	}
+	env->env_var_s = NULL;
+	env->next = NULL;
 	i = 0;
 	while (environ[i])
 	{
@@ -39,20 +41,20 @@ void	append_env_var(t_env *env, char *env_s)
 
 	if (!env->env_var_s)
 	{
-		env->env_var_s = ft_strdup(env_s);
+		env->env_var_s = env_s;
 		env->next = NULL;
 		return ;
 	}
 	current = env;
 	while (current->next)
 		current = current->next;
-	new_env_var = ft_calloc(sizeof(t_env), 0);
+	new_env_var = ft_calloc(sizeof(t_env), 1);
 	if (!new_env_var)
 	{
 		ft_putstr_fd("Error: Alocating memory: append_env_var()\n", 2);
 		return ;
 	}
-	new_env_var->env_var_s = ft_strdup(env_s);
+	new_env_var->env_var_s = env_s;
 	new_env_var->next = NULL;
 	current->next = new_env_var;
 }
