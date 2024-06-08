@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marcribe <marcribe@student.42.rio>                    +#+  +:+       +#+        */
+/*   By: marcribe <marcribe@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 14:56:47 by marcribe          #+#    #+#             */
-/*   Updated: 2023/10/30 11:18:21 by marcribe         ###   ########.fr       */
+/*   Updated: 2024/06/07 20:31:08 by marcribe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "../includes/libft.h"

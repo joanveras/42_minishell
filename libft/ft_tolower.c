@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marcribe <marcribe@student.42.rio>                    +#+  +:+       +#+        */
+/*   By: marcribe <marcribe@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 10:04:52 by marcribe          #+#    #+#             */
-/*   Updated: 2023/10/23 14:49:58 by marcribe         ###   ########.fr       */
+/*   Updated: 2024/06/07 20:26:38 by marcribe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "../includes/libft.h"
